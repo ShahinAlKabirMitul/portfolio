@@ -1,0 +1,1096 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Shahin Al Kabir Mitul</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    body {
+      font: 400 15px/1.8 Lato, sans-serif;
+
+      font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+      margin: 0 auto;
+      background-color: #fff;
+      color: #333;
+    }
+
+    h3,
+    h4 {
+      margin: 10px 0 30px 0;
+      letter-spacing: 10px;
+      font-size: 20px;
+
+    }
+
+    .container {
+      padding: 80px;
+    }
+
+
+
+    .carousel-inner img {
+      /* -webkit-filter: grayscale(90%);
+      filter: grayscale(90%); */
+      /* make all photos black and white */
+      width: 100%;
+      /* Set width to 100% */
+      margin: auto;
+    }
+
+    .carousel-caption h3 {
+      color: #fff !important;
+    }
+
+    @media (max-width: 600px) {
+      .carousel-caption {
+        display: none;
+        /* Hide the carousel text when the screen is less than 600 pixels wide */
+      }
+    }
+
+    .bg-1 {
+      background: #ccc;
+      color: #0f1025;
+    }
+
+    .bg-1 h3 {
+      color: #0f1025;
+    }
+
+    .bg-1 p {
+      font-style: italic;
+    }
+
+    .list-group-item:first-child {
+      border-top-right-radius: 0;
+      border-top-left-radius: 0;
+    }
+
+    .list-group-item:last-child {
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+
+    .thumbnail {
+      padding: 0 0 15px 0;
+      border: none;
+      border-radius: 0;
+    }
+
+    .thumbnail p {
+      margin-top: 15px;
+      color: #555;
+    }
+
+    .btn {
+      padding: 10px 20px;
+      background-color: #333;
+      color: #f1f1f1;
+      border-radius: 0;
+      transition: .2s;
+    }
+
+    .btn:hover,
+    .btn:focus {
+      border: 1px solid #333;
+      background-color: #fff;
+      color: #000;
+    }
+
+    .modal-header,
+    h4,
+    .close {
+
+      color: black !important;
+      text-align: center;
+      font-size: 30px;
+    }
+
+    .modal-header,
+    .modal-body {
+      padding: 40px 50px;
+    }
+
+    .nav-tabs li a {
+      color: #777;
+    }
+
+
+    .navbar {
+      font-family: Montserrat, sans-serif;
+      margin-bottom: 0;
+      background-color: #2d2d30;
+      border: 0;
+      font-size: 11px !important;
+      letter-spacing: 4px;
+      opacity: 0.9;
+    }
+
+    .navbar li a,
+    .navbar .navbar-brand {
+      color: #d5d5d5 !important;
+    }
+
+    .navbar-nav li a:hover {
+      color: #fff !important;
+    }
+
+    .navbar-nav li.active a {
+      color: #fff !important;
+      background-color: #29292c !important;
+    }
+
+    .navbar-default .navbar-toggle {
+      border-color: transparent;
+    }
+
+    .open .dropdown-toggle {
+      color: #fff;
+      background-color: #555 !important;
+    }
+
+    .dropdown-menu li a {
+      color: #000 !important;
+    }
+
+    .dropdown-menu li a:hover {
+      background-color: red !important;
+    }
+
+    footer {
+      background-color: #2d2d30;
+      color: #f5f5f5;
+      padding: 32px;
+    }
+
+    footer a {
+      color: #f5f5f5;
+    }
+
+    footer a:hover {
+      color: #777;
+      text-decoration: none;
+    }
+
+    .form-control {
+      border-radius: 0;
+    }
+
+    textarea {
+      resize: none;
+    }
+
+    .social-links {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+    }
+
+    .social-links li {
+      float: left;
+      margin: 0 8px 8px 0;
+    }
+
+    .social-links li a {
+      display: inline-block;
+      text-decoration: none;
+    }
+
+    .social-links li i {
+      font-size: 1.5em;
+    }
+
+    .col-full {
+      width: 100%;
+    }
+
+    .centered {
+      margin-left: auto;
+      margin-right: auto;
+      float: none;
+    }
+
+    .line {
+      display: block;
+      width: 290px;
+      height: 3px;
+      padding: 0!important;
+      background: #ccc;
+    }
+
+    .section-content {
+      margin-top: 30px;
+    }
+
+    .section-title {
+      margin: 0 0 15px 0;
+      padding: 0;
+      font-size: 2.250em;
+      font-weight: 300;
+      color: #0f1025;
+      text-transform: uppercase;
+      display: block;
+      text-align: center;
+      letter-spacing: 0.1em;
+    }
+
+    .section-content {
+      margin-top: 30px;
+    }
+
+    .section h3,
+    .section-alt h3 {
+      font-size: 1.5em;
+      color: #222;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+
+    .section h4,
+    .section-alt h4 {
+      font-size: 1em;
+      color: #222;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+
+    .clearfix:after {
+      content: ".";
+      display: block;
+      height: 0;
+      font-size: 0;
+      clear: both;
+      visibility: hidden;
+    }
+
+    .clearfix {
+      display: inline-block;
+    }
+
+    /* A.1 Hides from IE5/Mac \*/
+
+    * html .clearfix {
+      height: 1px;
+    }
+
+    .clearfix {
+      display: block;
+    }
+
+    #skills .line {
+      background-color: #f08b65;
+    }
+
+    .skill {
+      text-align: center;
+    }
+
+    .skill-pie {
+      width: 100%;
+      margin: 0 auto;
+      font-size: 14pt;
+      font-weight: 300;
+    }
+
+    .easyPieChart canvas {
+      margin: 0 auto;
+    }
+
+    .skill h3 {
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    /* 5. Experience */
+
+    #experience .line {
+      background-color: #e76270;
+    }
+
+    #experience .bullet {
+      color: #e76270;
+    }
+
+    #experience a {
+      color: #e76270;
+    }
+
+    .job h3 {
+      margin: 0 0 10px 0;
+      text-align: center;
+    }
+
+    .skill-container h3 {
+      margin: 0 0 10px 0;
+      text-align: center;
+    }
+
+    .job-attributions {
+      display: block;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+    }
+
+    .job-period {
+      text-align: right;
+    }
+
+    .job-project {
+      text-align: center;
+    }
+
+    /* 6. Education */
+
+    #education .line {
+      background-color: #f24759;
+    }
+
+    #education .bullet {
+      color: #f24759;
+    }
+
+    #education a {
+      color: #f24759;
+    }
+
+    .school h3 {
+      margin: 0 0 10px 0;
+      text-align: center;
+    }
+
+    .school-meta {
+      display: block;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+    }
+
+    #experience .line {
+      background-color: #e76270;
+    }
+
+    #experience .bullet {
+      color: #e76270;
+    }
+
+    #experience a {
+      color: #e76270;
+    }
+
+    .job h3 {
+      margin: 0 0 10px 0;
+      text-align: center;
+    }
+
+    .skill-container h3 {
+      margin: 0 0 10px 0;
+      text-align: center;
+    }
+
+    .job-attributions {
+      display: block;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+    }
+
+    .job-period {
+      text-align: right;
+    }
+
+    .job-project {
+      text-align: center;
+    }
+
+    /* 6. Education */
+
+    #education .line {
+      background-color: #f24759;
+    }
+
+    #education .bullet {
+      color: #f24759;
+    }
+
+    #education a {
+      color: #f24759;
+    }
+
+    .school h3 {
+      margin: 0 0 10px 0;
+      text-align: center;
+    }
+
+    .school-meta {
+      display: block;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+    }
+
+    /* 7. Portfolio */
+
+    #portfolio .line {
+      background-color: #f08b65;
+    }
+
+    #portfolio .bullet {
+      color: #f08b65;
+    }
+
+    #portfolio a {
+      color: #f08b65;
+    }
+
+    .project {
+      opacity: 0;
+      display: none;
+      text-align: center;
+    }
+
+    .filters {
+      display: block;
+      margin: 0 0 15px 0;
+      padding: 0;
+      list-style-type: none;
+      text-align: center;
+    }
+
+    .filters li {
+      color: #000000;
+      display: inline-block;
+      cursor: pointer;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+    }
+
+    .filters li:hover,
+    .filters li.active {
+      color: #f08b65;
+    }
+
+    .filters li:before {
+      content: "\2022";
+      padding: 0 10px;
+      color: #f08b65;
+    }
+
+    .filters li:first-child:before {
+      content: "";
+      padding: 0;
+    }
+
+    .separator {
+      width: 30px;
+      height: 3px;
+      background: #ccc;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+
+    @media screen and (max-width: 768px) {
+      .skill,
+      .project {
+        width: 33.33333333333333%;
+      }
+      .job-project {
+        width: 50%;
+      }
+    }
+
+    @media screen and (max-width: 640px) {
+      .section-title {
+        font-size: 2em;
+        line-height: 1em;
+      }
+      .info .container h1 {
+        font-size: 2.300em;
+      }
+      .info .container h4 {
+        font-size: 1.500em;
+      }
+      #nav li {
+        font-size: 0.875em;
+      }
+      #nav li a span {
+        display: none;
+      }
+      .line {
+        width: 200px;
+      }
+      .job-company,
+      .job-period {
+        text-align: center;
+      }
+      .skill,
+      .job-project,
+      .project {
+        float: left;
+        width: 50%;
+      }
+      .text-right {
+        text-align: left;
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      .section-content {
+        margin-top: 45px;
+      }
+      #nav ul li {
+        padding: 0 5px;
+      }
+    }
+  </style>
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#myPage">Shahin Al Kabir Mitul</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="#myPage">HOME</a>
+          </li>
+          <li>
+            <a href="#band">ABOUT</a>
+          </li>
+          <li>
+            <a href="#skills">SKILL</a>
+          </li>
+          <li>
+            <a href="#experience">EXPERIENCE</a>
+          </li>
+          <li>
+            <a href="#education">EDUCATION</a>
+          </li>
+          <li>
+            <a href="#contact">CONTACT</a>
+          </li>
+
+          <li>
+            <a href="#">
+              <span class="glyphicon glyphicon-search"></span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="http://res.cloudinary.com/mitul/image/upload/v1521648575/cover_1_puzwab.jpg" alt="New York" width="1200" height="700">
+        <div class="carousel-caption">
+          <h3>New York</h3>
+          <p>The atmosphere in New York is lorem ipsum.</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="http://res.cloudinary.com/mitul/image/upload/v1521648576/cover_2_tib0ix.jpg" alt="Chicago" width="1200" height="700">
+        <div class="carousel-caption">
+          <h3>Chicago</h3>
+          <p>Thank you, Chicago - A night we won't forget.</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="http://res.cloudinary.com/mitul/image/upload/v1521656726/cover4_zjgpid.jpg" alt="Los Angeles" width="1200" height="700">
+        <div class="carousel-caption">
+          <h3>LA</h3>
+          <p>Even though the traffic was a mess, we had the best time playing at Venice Beach!</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+  <!-- Container (The Band Section) -->
+  <div id="band" class="container">
+
+
+    <div class="row">
+      <div class="col-full">
+        <h2 class="section-title">About me</h2>
+        <div class="centered line"></div>
+      </div>
+    </div>
+
+    <div class="row section-content">
+      <div class="col-sm-4" style="text-align: center;">
+        <img class="img-fluid img-thumbnail img-circle" alt="This is me!" src="http://res.cloudinary.com/mitul/image/upload/v1516637881/xlb3sze8pmzbrpvmztzg.jpg"
+        />
+      </div>
+      <div class="col-sm-4">
+        <h4>Hi,It's me!</h4>
+
+        <p>I like building awesome resturent POS software,corporate software.If you are interested, you can view some of my
+          favorite projects in my
+          <a href="#portfolio">portfolio</a> down below.</p>
+        <p>Need something built or simply want to have chat? Reach out to me on social media or send me an
+          <a href="#contact">email</a>.</p>
+        <ul class="social-links clearfix">
+          <li>
+            <a href="https://twitter.com/mitul_cse" target="_blank" title="Twitter">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/shahin.sub" target="_blank" title="Facebook">
+              <i class="fa fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/ShahinAlKabirMitul" target="_blank" title="Github">
+              <i class="fa fa-github"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/shahinalkabir/" title="LinkedIn">
+              <i class="fa fa-linkedin"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-sm-4">
+        <h4>My personal interests</h4>
+
+        <p>When I am not
+          <a href="#skills">coding</a> my next project, I enjoy spending my time doing any of the following:</p>
+        <ul>
+          <li>I love
+            <strong>Travailing</strong>;</li>
+          <li>I am watching my favorite
+            <strong>eSports</strong> games;</li>
+          <li>I am
+            <strong>brainstorming</strong> at conferences around the world;</li>
+          <li>And I am
+            <strong>meeting more people</strong> and creating new opportunities.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  </section>
+
+
+
+
+
+  </div>
+  </div>
+
+  <!-- Container (TOUR Section) -->
+  <section id="skills" class="section-alt">
+    <div class="jumbotron">
+      <div class="container">
+        <div class="row">
+          <div class="col-full">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="centered line"></div>
+          </div>
+        </div>
+
+        <div class="row section-content">
+
+
+
+          <div class="skill-container">
+
+            <div class="col-full">
+              <div class="col-full text-center">I've worked with a wide variety of programming languages. For web applications I use C#,dotnet core and Javascript.
+                Whenever I need the most performance possible I obviously go with C++ and finally when I am building prototypes
+                or working on my hobby projects I fall back on Python</div>
+            </div>
+
+            <div class="col-lg-12 col-md-12 col-sm-12">
+              <div class="col-lg-2 col-md-2 col-sm-2 skill">
+                <h4>
+                  <strong>C#</strong>
+                </h4>
+              </div>
+              <div class="col-lg-2 col-md-2 col-sm-2 skill">
+                <h4>APS.NET</h4>
+              </div>
+              <div class="col-lg-2 col-md-2 col-sm-2 skill">
+                <h4>Node.js</h4>
+              </div>
+              <div class="col-lg-2 col-md-2 col-sm-2 skill">
+                <h4>Xamarin</h4>
+              </div>
+              <div class="col-lg-2 col-md-2 col-sm-2 skill">
+                <h4>SQL Server</h4>
+              </div>
+            </div>
+            <div class="col-full skill-container">
+              <h3>Most frequently used tools</h3>
+            </div>
+            <div class="col-lg-12 col-wrap centered skill-container">
+
+              <div class="col-lg-6 col-md-6 col-sm-6">
+                <strong>Frameworks and Engines</strong>
+                <ul>
+                  <li>MVC</li>
+                  <li>Angular 4</li>
+                  <li>React</li>
+                  <li>Dot Net Core</li>
+                  <li>MVVM</li>
+                </ul>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-6">
+                <strong>Software</strong>
+                <ul>
+                  <li>Windows & Linux</li>
+                  <li>Vusual Stodio</li>
+                  <li>SQL Server Management Studio</li>
+                  <li>Git</li>
+                  <li>Vusual Stodio Code(
+                    <strong>Most favorite</strong> )</li>
+                  <li>Resharper</li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+
+
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="experience" class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-full">
+          <h2 class="section-title">Work Experience</h2>
+          <div class="centered line"></div>
+        </div>
+      </div>
+
+      <div class="row section-content">
+        <div class="job">
+          <div class="col-full">
+            <h3>DevOps Software Engineer</h3>
+            <div class="job-attributions">Big data
+              <span class="bullet">&bull;</span> Data analysis
+              <span class="bullet">&bull;</span> Backend development</div>
+          </div>
+
+          <div class="col-full text-center"> I am responsible for the extraction of high quality data from the web. I develop software that extracts information
+            from the unstructured deep web and that converts it into a structured format for further data analysis.</div>
+
+          <div class="row">
+            <div class="col-md-12 col-wrap centered">
+              <div class="col-md-6 job-company">
+                <strong>Company:</strong>
+                <a href="http://www.mediasoftbd.com/" target="_blank">Mediasoft Data Systems Ltd</a>
+              </div>
+              <div class="col-md-6 job-period">
+                <strong>Period:</strong> November 2013 - Present</div>
+            </div>
+          </div>
+
+          <br>
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-wrap centered gallery">
+              <div class="col-lg-4 col-md-4 job-project">
+                <a href="http://www.kaiwa-projects.com/assets/img/coosto-big-1.jpg" title="Trending topics across the web.">
+                  <img src="http://www.kaiwa-projects.com/assets/img/coosto-thumb-1.png" alt="Trending topics across the web.">
+                </a>
+              </div>
+              <div class="col-lg-4 col-md-4  job-project">
+                <a href="http://www.kaiwa-projects.com/assets/img/coosto-big-2.jpg" title="GPS features with social media.">
+                  <img src="http://www.kaiwa-projects.com/assets/img/coosto-thumb-2.png" alt="GPS features with social media.">
+                </a>
+              </div>
+              <div class="col-lg-4 col-md-4  job-project">
+                <a href="http://www.kaiwa-projects.com/assets/img/coosto-big-3.jpg" title="Brand comparisons with Coosto.">
+                  <img src="http://www.kaiwa-projects.com/assets/img/coosto-thumb-3.png" alt="Brand comparisons with Coosto.">
+                </a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+      </div>
+
+    </div>
+  </section>
+
+  <section id="education" class="section-alt">
+    <div class="jumbotron">
+      <div class="container">
+        <div class="row">
+          <div class="col-full">
+            <h2 class="section-title">Education</h2>
+            <div class="centered line"></div>
+          </div>
+        </div>
+
+        <div class="row section-content">
+          <div class="row school">
+            <div class="col-full">
+              <h3>Stamford University Bangladesh</h3>
+              <div class="school-meta">Bachelor of Computer Science
+                <span class="bullet">&bull;</span> Software Development</div>
+            </div>
+
+            <div class="col-full text-center">
+              I studied Software Architecture and Design at the Stamford University Bangladesh. Here I have gained strong knowledge a wide
+              variety of subjects including data structures, networking, audio and graphics programming.
+              <p>
+                <strong>Graduating in:</strong> Early 2013</p>
+            </div>
+          </div>
+
+          <div class="separator"></div>
+
+          <div class="row school">
+            <div class="col-full">
+              <h3>BASIS Institute of Technology & Management (BITM)</h3>
+              <div class="school-meta">Object Oriented Programming with C#
+                <span class="bullet">&bull;</span> Software Development</div>
+            </div>
+
+            <div class="col-full text-center">
+              I completed two courses at BITM . The first course was a computer science course after which I did an additional year in
+              application development. This combination gave me a good understanding of both hardware and software. The application
+              development course was originally a two year track but I graduated a year early.
+              <p>
+                <strong>Ended:</strong> 2013</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section id="portfolio" class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-full">
+          <h2 class="section-title">Some of my favorite projects</h2>
+          <div class="centered line"></div>
+        </div>
+      </div>
+
+      <div class="row section-content">
+        <div class="row">
+          <div class="col-full">
+            <ul class="filters">
+
+              <li class="filter" data-filter="port-application">Applications</li>
+              <li class="filter" data-filter="port-game">Desktob POS</li>
+              <li class="filter" data-filter="port-web">Web</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row projects gallery">
+          <div class="col-lg-2">
+            <a href="" title="C# ImageViewer UserControl open-source available on CodeProject.">
+              <img src="http://www.kaiwa-projects.com/assets/img/project-thumb-1.png" alt="C# ImageViewer UserControl open-source available on CodeProject.">
+            </a>
+          </div>
+          <div class="col-lg-2">
+            <a href="http://www.kaiwa-projects.com/assets/img/project-big-2.jpg" title="Super Puzzle Platformer is a Unity game developed in 14 days.">
+              <img src="http://www.kaiwa-projects.com/assets/img/project-thumb-2.png" alt="Super Puzzle Platformer is a Unity game developed in 14 days.">
+            </a>
+          </div>
+          <div class="col-lg-2">
+            <a href="http://www.kaiwa-projects.com/assets/img/project-big-3.jpg" title="Super Puzzle Platformer is a Unity game developed in 14 days.">
+              <img src="http://www.kaiwa-projects.com/assets/img/project-thumb-3.png" alt="Super Puzzle Platformer is a Unity game developed in 14 days.">
+            </a>
+          </div>
+          <div class="col-lg-2">
+            <a href="http://www.kaiwa-projects.com/assets/img/project-big-4.jpg" title="Oculus Rift game developed during a Global Game Jam.">
+              <img src="http://www.kaiwa-projects.com/assets/img/project-thumb-4.png" alt="Oculus Rift game developed during a Global Game Jam.">
+            </a>
+          </div>
+          <div class="col-lg-2">
+            <a href="http://www.kaiwa-projects.com/assets/img/project-big-5.jpg" title="Oculus Rift game developed during a Global Game Jam.">
+              <img src="http://www.kaiwa-projects.com/assets/img/project-thumb-5.png" alt="Oculus Rift game developed during a Global Game Jam.">
+            </a>
+          </div>
+          <div class="col-lg-2">
+            <a href="http://www.kaiwa-projects.com/assets/img/project-big-6.jpg" title="Software Rasterizer">
+              <img src="http://www.kaiwa-projects.com/assets/img/project-thumb-6.png" alt="Software Rasterizer">
+            </a>
+          </div>
+          <div class="col-lg-2">
+            <a href="http://www.kaiwa-projects.com/assets/img/kaiwa-big-1.jpg" title="Kubed, the Kubernetes cluster manager I built.">
+              <img src="http://www.kaiwa-projects.com/assets/img/kaiwa-thumb-1.png" alt="Kubed, the Kubernetes cluster manager I built.">
+            </a>
+          </div>
+          <div class="col-lg-2">
+            <a href="http://www.kaiwa-projects.com/assets/img/kaiwa-big-2.jpg" title="A custom developed Customer Management System for a driveways company.">
+              <img src="http://www.kaiwa-projects.com/assets/img/kaiwa-thumb-2.png" alt="A custom developed Customer Management System for a driveways company.">
+            </a>
+          </div>
+          <div class="col-lg-2">
+            <a href="http://www.kaiwa-projects.com/assets/img/kaiwa-big-3.jpg" title="Lead Generation Admin System, both front-end and back-end.">
+              <img src="http://www.kaiwa-projects.com/assets/img/kaiwa-thumb-3.png" alt="Lead Generation Admin System, both front-end and back-end.">
+            </a>
+          </div>
+          <div class="col-lg-2">
+            <a href="http://www.kaiwa-projects.com/assets/img/kaiwa-big-4.jpg" title="A small website to learn Korean gaming terms for fun using the Hearthstone cards database.">
+              <img src="http://www.kaiwa-projects.com/assets/img/kaiwa-thumb-4.png" alt="A small website to learn Korean gaming terms for fun using the Hearthstone cards database.">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="jumbotron">
+      <div class="container">
+        <div class="row">
+          <div class="col-full">
+            <h2 class="section-title">Let's get in touch</h2>
+            <div class="centered line"></div>
+          </div>
+        </div>
+
+        <div class="row section-content">
+          <div class="col-2-3 col-wrap centered text-center">
+            <div class="row">
+              <div class="col-full" style="margin-bottom: 25px;">
+                Need anything built, want to work together or simply want to have a chat?
+                <br />Drop me an e-mail at mitul.cse@gmail.com or simply fill out the form below and I will reply to you soon!
+                <input type="hidden" id="thank_you" value="Thank you for contacting me!" />
+              </div>
+            </div>
+
+            <div id="form-contact-container">
+              <div class="col">
+                <input type="text" class="form-control" name="name" id="name" value="" placeholder="Name">
+              </div>
+              <br>
+              <div class="col-full">
+                <input type="text" class="form-control" name="email" id="email" value="" placeholder="E-mail address">
+              </div>
+              <br>
+              <div class="col-full">
+                <textarea name="message" class="form-control" id="message" rows="4" placeholder="Your message"></textarea>
+              </div>
+              <br>
+              <div class="col-full" class="form-control">
+                <button class="btn btn-primary" data-style="expand-right" id="submit-contact">Send</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+
+
+
+  <!-- Container (Contact Section) -->
+
+
+  <!-- Add Google Maps -->
+
+  <!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
+  <!-- Footer -->
+  <footer class="text-center">
+    <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+      <span class="glyphicon glyphicon-chevron-up"></span>
+    </a>
+    <br>
+    <br>
+    <p>Bootstrap Theme Made By
+      <a href="https://www.w3schools.com" data-toggle="tooltip" title="Visit w3schools">www.w3schools.com</a>
+    </p>
+  </footer>
+
+  <script>
+    $(document).ready(function () {
+      // Initialize Tooltip
+      $('[data-toggle="tooltip"]').tooltip();
+
+      // Add smooth scrolling to all links in navbar + footer link
+      $(".navbar a, footer a[href='#myPage']").on('click', function (event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 900, function () {
+
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    })
+  </script>
+
+</body>
+
+</html>
